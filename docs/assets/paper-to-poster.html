@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>论文原图与 HTML 海报对照</title>
+<style>
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 2400px; height: 1800px; overflow: hidden; }
+body { color: #183448; background: #eef3f5; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
+main { padding: 48px 64px; }
+.brand { margin: 0 0 12px; color: #267181; font-size: 24px; font-weight: 650; letter-spacing: 2px; }
+h1 { margin: 0; font-size: 58px; letter-spacing: -1px; line-height: 1.3; }
+.intro { margin: 15px 0 0; font-size: 28px; color: #526b7c; }
+.comparison { display: grid; grid-template-columns: 1220px 78px 974px; margin-top: 35px; }
+.label { display: flex; align-items: baseline; gap: 20px; margin: 0 0 20px; font-size: 31px; font-weight: 700; }
+.label span { font-size: 22px; font-weight: 450; color: #688090; }
+.card { background: white; border: 1px solid #d4e0e5; border-radius: 13px; padding: 18px 24px; margin-bottom: 20px; }
+.card h2 { margin: 0 0 14px; font-size: 23px; line-height: 1.25; font-weight: 600; color: #526b7c; }
+.card img { display: block; width: 100%; height: auto; }
+.motivation { height: 544px; }
+.motivation img { width: 1100px; margin: 0 auto; }
+.method { height: 435px; }
+.results { height: 385px; display: grid; grid-template-columns: 647px 1fr; column-gap: 27px; }
+.results img { width: 647px; }
+.notes { padding: 33px 6px 0; }
+.notes h3 { margin: 0 0 14px; font-size: 28px; line-height: 1.4; }
+.notes p { margin: 0 0 30px; font-size: 25px; line-height: 1.65; color: #5a7180; }
+.arrow { display: flex; align-items: center; justify-content: center; padding-bottom: 120px; color: #267181; font-size: 53px; }
+.poster-frame { padding: 12px; background: white; border: 1px solid #d4e0e5; box-shadow: 0 12px 35px #1b405714; }
+.poster-frame img { display: block; width: 948px; height: auto; }
+.foot { position: absolute; bottom: 32px; left: 64px; right: 64px; display: flex; justify-content: space-between; align-items: center; font-size: 23px; color: #647c8b; }
+.foot strong { color: #267181; font-weight: 650; }
+</style>
+<main>
+  <p class="brand">PAPER POSTER AGENT</p>
+  <h1>DINOv2 原图 → HTML 海报</h1>
+  <p class="intro">Agent 使用公开论文原图，把数据处理方法、特征可视化和实验结果排成海报。</p>
+  <div class="comparison">
+    <section>
+      <p class="label">公开论文原图 <span>Oquab et al. · TMLR 2024</span></p>
+      <article class="card motivation">
+        <h2>特征可视化 · Figure 1</h2>
+        <img src="paper-figures/motivation.svg" alt="DINOv2 公开论文原图：四组照片及其 PCA 特征可视化，完整保留 a 到 d 标签">
+      </article>
+      <article class="card method">
+        <h2>数据处理管线 · Figure 3</h2>
+        <img src="paper-figures/method.svg" alt="DINOv2 公开论文原始数据管线：嵌入、去重、检索与数据构建">
+      </article>
+      <article class="card results">
+        <div>
+          <h2>跨任务评估 · Figure 2</h2>
+          <img src="paper-figures/comparison.svg" alt="DINOv2 公开论文原始八任务性能曲线，保留全部坐标与 SSL、WSL、DINOv2 图例">
+        </div>
+        <div class="notes">
+          <h3>原图、数据与实验条件<br>一起呈现研究结果</h3>
+          <p>三张原图保留完整内容，海报补充研究方法与评估说明。</p>
+          <p>实验区域同时展示论文曲线和真实数据表。</p>
+        </div>
+      </article>
+    </section>
+    <div class="arrow" aria-hidden="true">→</div>
+    <section>
+      <p class="label">HTML 海报 <span>DINOv2 排版样例</span></p>
+      <div class="poster-frame">
+        <img src="showcase/poster-preview.png" alt="使用左侧原图制作的 HTML 海报预览，完整展示方法、对比实验和数据表">
+      </div>
+    </section>
+  </div>
+  <div class="foot"><strong>HTML 可编辑 · 高清 PNG · PDF 导出</strong><span>DINOv2 · Oquab et al. · TMLR 2024 · CC BY 4.0 · 排版样例</span></div>
+</main>
+</html>

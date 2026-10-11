@@ -1,0 +1,19 @@
+{
+  "entrypoint": "poster_agent.demo.create_demo",
+  "command": "poster-agent demo ./my-demo",
+  "is_demo": true,
+  "data": "Original synthetic fixture; no real participants or scientific experiment",
+  "conference": "Explicit local A0 configuration, not attributed to a real conference",
+  "expected_page_mm": [
+    841,
+    1189
+  ],
+  "expected_png_pixels": [
+    6000,
+    8483
+  ],
+  "model_calls": 0,
+  "human_approval": "pending",
+  "print_ready": false,
+  "license": "Repository LICENSE applies to original demo code and material"
+}

@@ -1,0 +1,153 @@
+{
+  "paper": {
+    "title": "DINOv2: Learning Robust Visual Features without Supervision",
+    "authors": [
+      "Maxime Oquab",
+      "Timothée Darcet",
+      "Théo Moutakanni",
+      "Huy V. Vo",
+      "Marc Szafraniec",
+      "Vasil Khalidov",
+      "Pierre Fernandez",
+      "Daniel Haziza",
+      "Francisco Massa",
+      "Alaaeldin El-Nouby",
+      "Mahmoud Assran",
+      "Nicolas Ballas",
+      "Wojciech Galuba",
+      "Russell Howes",
+      "Po-Yao Huang",
+      "Shang-Wen Li",
+      "Ishan Misra",
+      "Michael Rabbat",
+      "Vasu Sharma",
+      "Gabriel Synnaeve",
+      "Hu Xu",
+      "Hervé Jegou",
+      "Julien Mairal",
+      "Patrick Labatut",
+      "Armand Joulin",
+      "Piotr Bojanowski"
+    ],
+    "venue": "Transactions on Machine Learning Research",
+    "publication_date": "2024-01",
+    "arxiv_version": "2304.07193v2",
+    "paper_url": "https://arxiv.org/abs/2304.07193v2",
+    "pdf_url": "https://arxiv.org/pdf/2304.07193v2",
+    "review_url": "https://openreview.net/forum?id=a68SUt6zFt",
+    "publisher_url": "https://jmlr.org/tmlr/papers/"
+  },
+  "rights": {
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "basis": "TMLR author guidelines apply CC BY 4.0 to submissions and final publications. The downloaded PDF identifies itself as the January 2024 TMLR publication.",
+    "policy_url": "https://jmlr.org/tmlr/author-guide.html",
+    "policy_quote": "All TMLR submissions, from the time of submission to final publication, are licensed under CC BY 4.0.",
+    "arxiv_license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "arxiv_license_scope": "arXiv distribution permission; the reuse basis recorded here is the TMLR publication policy.",
+    "attribution": "Figures 1-3 from Maxime Oquab et al., DINOv2: Learning Robust Visual Features without Supervision, TMLR (January 2024), CC BY 4.0. Cropped and rendered for this independently made poster example.",
+    "project_license_scope": "The repository code license does not replace this paper's CC BY 4.0 attribution.",
+    "checked_date": "2026-10-12"
+  },
+  "operations": [
+    "PDF figure crop",
+    "Preserve vector paths and embedded source images in SVG",
+    "Render PNG preview at 2400 pixels wide",
+    "Internal image metadata removed losslessly; scientific pixels, ICC color profiles, and vector paths unchanged"
+  ],
+  "resolution_note": "PNG preview dimensions describe the exported canvas. The original embedded photographs retain their source resolution.",
+  "figures": [
+    {
+      "id": "motivation",
+      "figure_number": 1,
+      "pdf_page": 2,
+      "bbox_pt": [
+        71,
+        81,
+        541,
+        276
+      ],
+      "description": "PCA visualization of learned patch features",
+      "svg": "motivation.svg",
+      "png": "motivation.png",
+      "preview_dimensions_px": [
+        2400,
+        996
+      ],
+      "original_caption": "Figure 1: Visualization of the first PCA components. We compute a PCA between the patches of the\nimages from the same column (a, b, c and d) and show their first 3 components. Each component is matched\nto a different color channel. Same parts are matched between related images despite changes of pose, style\nor even objects. Background is removed by thresholding the first PCA component.",
+      "changes": "Cropped to the complete figure; caption stored separately. No figure labels, plotted values, photographs, or colors were changed.",
+      "svg_sha256": "4466db37a80c2ce1551d6b342d6255237f2b524634e94b9b0ff930dfb7fea44e",
+      "png_sha256": "cbaa64a01bf62c1a31556c5f84364fcf32bfbbf90b0ae5af9faa8d8b8decd0de",
+      "metadata_cleanup": {
+        "lossless": true,
+        "pixels_verified_unchanged": true,
+        "embedded_image_count": 1,
+        "embedded_pixel_sha256": [
+          "22a5a902139f237b54db4f726d5fd74fccae8574c93d1597b6ac4dfcd0e52e3c"
+        ]
+      }
+    },
+    {
+      "id": "method",
+      "figure_number": 3,
+      "pdf_page": 4,
+      "bbox_pt": [
+        71,
+        82,
+        541,
+        223
+      ],
+      "description": "Automatic data processing pipeline",
+      "svg": "method.svg",
+      "png": "method.png",
+      "preview_dimensions_px": [
+        2400,
+        720
+      ],
+      "original_caption": "Figure 3: Overview of our data processing pipeline. Images from curated and uncurated data sources\nare first mapped to embeddings. Uncurated images are then deduplicated before being matched to curated\nimages. The resulting combination augments the initial dataset through a self-supervised retrieval system.",
+      "changes": "Cropped to the complete figure; caption stored separately. No figure labels, plotted values, photographs, or colors were changed.",
+      "svg_sha256": "c19f754adb537641cdc74be78e0c193623a86b6cad45f145541ec092a478cd83",
+      "png_sha256": "fa232eee9f2959cac751fcc20954d1694ef5cc055989670fffe088cd89834415",
+      "metadata_cleanup": {
+        "lossless": true,
+        "pixels_verified_unchanged": true,
+        "embedded_image_count": 5,
+        "embedded_pixel_sha256": [
+          "ce45f7590e5d5723731d24f5f61a677622428474fb402e14ac96c38ce7a19484",
+          "22fb7c52d1bf3850ddcd692bd4588a1dee5c185f7a5cf489aec8af3a0a0971d8",
+          "f0e48bdaefa0dce90bf310dc321c9643d734518434133d2676ac1cdeb1b5e14c",
+          "ad016378ce8878f813d8493839d70abe1ecd67c722815f379c94c0e43713d9db",
+          "edc4f6ab77f7c7b98868277d25122ea054fbd8030a31f925faaa1f257e6af68b"
+        ]
+      }
+    },
+    {
+      "id": "comparison",
+      "figure_number": 2,
+      "pdf_page": 3,
+      "bbox_pt": [
+        70,
+        82,
+        541,
+        298
+      ],
+      "description": "Scaling curves across eight vision tasks",
+      "svg": "comparison.svg",
+      "png": "comparison.png",
+      "preview_dimensions_px": [
+        2400,
+        1101
+      ],
+      "original_caption": "Figure 2: Evolution of performance when scaling in parameters. We show performance on eight\ntypes of vision tasks, as presented in Sec. 7, and average metrics with each type. Features are extracted\nfrom our self-supervised encoders, DINOv2 (dark blue), and we compare them with self-supervised methods\n(pale orange), as well as weakly-supervised methods (dark pink). We report the best-performing weakly-\nsupervised model’s performance as a dashed horizontal line. Our family of models drastically improves over\nthe previous state of the art in self-supervised learning and reaches performance comparable with weakly-\nsupervised features. See Sec. 7 for a detailed analysis.",
+      "changes": "Cropped to the complete figure; caption stored separately. No figure labels, plotted values, photographs, or colors were changed.",
+      "svg_sha256": "7407d81ba7f3fb0dbc59d1c89ec300cc39ac35c596e4f1b3c90adbd13e7642f5",
+      "png_sha256": "db5a4b452a2118072985aafa2c037b8c0f4fd1d26dcb806cbdbb41c6af1949e8",
+      "metadata_cleanup": {
+        "lossless": true,
+        "pixels_verified_unchanged": true,
+        "embedded_image_count": 0,
+        "embedded_pixel_sha256": []
+      }
+    }
+  ]
+}

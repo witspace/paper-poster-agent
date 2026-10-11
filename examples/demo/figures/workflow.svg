@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="965" height="320" viewBox="0 0 965 320">
+    <rect width="965" height="320" fill="#ffffff"/>
+    <g font-family="Arial, sans-serif" fill="#183448">
+      <text x="35" y="40" font-size="24" font-weight="700">A traceable local revision loop</text>
+      <rect x="35" y="70" width="245" height="110" rx="8" fill="#edf4f6"/>
+      <text x="55" y="105" font-size="22" font-weight="700">Preserve originals</text>
+      <text x="55" y="137" font-size="18">Vector path + source file</text>
+      <text x="55" y="162" font-size="18">Preview is for inspection</text>
+      <path d="M295 125 H345 M330 112 L345 125 L330 138" fill="none" stroke="#157b86" stroke-width="5"/>
+      <rect x="360" y="70" width="245" height="110" rx="8" fill="#e7f3f2"/>
+      <text x="380" y="105" font-size="22" font-weight="700">Render + compare</text>
+      <text x="380" y="137" font-size="18">Reference / HTML / PDF</text>
+      <text x="380" y="162" font-size="18">Check sources and geometry</text>
+      <path d="M620 125 H670 M655 112 L670 125 L655 138" fill="none" stroke="#157b86" stroke-width="5"/>
+      <rect x="685" y="70" width="245" height="110" rx="8" fill="#fff3df"/>
+      <text x="705" y="105" font-size="22" font-weight="700">Human review</text>
+      <text x="705" y="137" font-size="18">Point to a specific region</text>
+      <text x="705" y="162" font-size="18">Explain the desired change</text>
+      <path d="M805 200 V245 H480 V200 M467 215 L480 200 L493 215" fill="none" stroke="#d39439" stroke-width="5"/>
+      <text x="505" y="230" font-size="18">Local revision + version comparison</text>
+      <text x="35" y="295" font-size="17">Approval binds to the current version. A new edit requires a new inspection.</text></g></svg>

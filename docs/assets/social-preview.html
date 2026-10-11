@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Poster Agent</title>
+<style>
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1280px; height: 640px; overflow: hidden; }
+body { background: #eef3f5; color: #183448; font-family: "Segoe UI", "Microsoft YaHei", sans-serif; }
+main { padding: 26px 38px; }
+.brand { margin: 0 0 4px; color: #267181; font-size: 17px; font-weight: 700; letter-spacing: 1px; }
+h1 { margin: 0; font-size: 38px; line-height: 1.3; letter-spacing: -1px; }
+.intro { margin: 8px 0 14px; font-size: 19px; color: #546d7d; }
+.source { width: 754px; }
+.label { margin: 0 0 8px; font-size: 17px; font-weight: 650; }
+.method { background: white; padding: 8px 15px; border: 1px solid #d5e0e6; }
+.method img { display: block; width: 722px; height: auto; }
+.bottom { display: flex; gap: 20px; margin-top: 16px; align-items: center; }
+.bottom img { display: block; width: 220px; height: auto; background: white; padding: 7px; border: 1px solid #d5e0e6; }
+.bottom p { font-size: 19px; line-height: 1.75; margin: 0; color: #526d7e; }
+.bottom strong { color: #267181; }
+.poster { position: absolute; right: 38px; top: 25px; width: 380px; padding: 8px; background: white; border: 1px solid #d5e0e6; box-shadow: 0 8px 25px #1b405713; }
+.poster img { display: block; width: 362px; height: auto; }
+.poster .label { text-align: center; font-size: 16px; margin-bottom: 8px; }
+.caption { text-align: center; font-size: 12px; color: #718897; margin: 7px 0 0; }
+</style>
+<main>
+  <p class="brand">PAPER POSTER AGENT</p>
+  <h1>Agent 用论文原图做海报。</h1>
+  <p class="intro">公开案例：DINOv2 · Oquab et al. · TMLR 2024</p>
+  <section class="source">
+    <p class="label">DINOv2 论文原图 → HTML 海报</p>
+    <div class="method"><img src="paper-figures/motivation.svg" alt="DINOv2 公开论文原始 PCA 特征可视化"></div>
+    <div class="bottom">
+      <img src="paper-figures/comparison.svg" alt="DINOv2 公开论文原始八任务评估曲线">
+      <p><strong>保留原图，突出方法与实验。</strong><br>Agent 完成排版，再按修改意见调整。<br>HTML · 高清 PNG · PDF</p>
+    </div>
+  </section>
+  <section class="poster">
+    <p class="label">HTML 海报样例</p>
+    <img src="showcase/poster-preview.png" alt="使用论文原图制作的 HTML 海报预览">
+    <p class="caption">DINOv2 · CC BY 4.0 · 排版预览</p>
+  </section>
+</main>
+</html>

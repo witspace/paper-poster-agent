@@ -1,0 +1,47 @@
+{
+  "kind": "public-paper-layout-example",
+  "title": "DINOv2: Learning Robust Visual Features without Supervision",
+  "authors": "Maxime Oquab et al.",
+  "publication": "Transactions on Machine Learning Research, January 2024",
+  "paper_url": "https://arxiv.org/abs/2304.07193",
+  "review_url": "https://openreview.net/forum?id=a68SUt6zFt",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_basis": "https://jmlr.org/tmlr/author-guide.html",
+  "attribution": "Figures 1, 2 and 3 from Oquab et al. (2024), DINOv2. Full figure panels retained; surrounding paper text omitted. Poster prose paraphrases the paper, and the table selects six unchanged rows from Table 4.",
+  "renderer": "poster_agent.render.export_project",
+  "canvas_mm": [
+    841,
+    1189
+  ],
+  "png_pixels": [
+    6000,
+    8483
+  ],
+  "status": "review",
+  "print_ready": false,
+  "figures": [
+    {
+      "file": "../paper-figures/motivation.svg",
+      "sha256": "4466db37a80c2ce1551d6b342d6255237f2b524634e94b9b0ff930dfb7fea44e",
+      "copied_without_modification": true
+    },
+    {
+      "file": "../paper-figures/method.svg",
+      "sha256": "c19f754adb537641cdc74be78e0c193623a86b6cad45f145541ec092a478cd83",
+      "copied_without_modification": true
+    },
+    {
+      "file": "../paper-figures/comparison.svg",
+      "sha256": "7407d81ba7f3fb0dbc59d1c89ec300cc39ac35c596e4f1b3c90adbd13e7642f5",
+      "copied_without_modification": true
+    }
+  ],
+  "figure_preparation": "See ../paper-figures/source.json for crop bounds and lossless source-image metadata cleanup; scientific pixels and vector paths are preserved.",
+  "design_reference": "Built-in ImageGen guided palette, title scale and figure hierarchy. Original paper assets and checked values form the final research content.",
+  "table": {
+    "paper_page": 12,
+    "number": 4,
+    "evaluation": "Frozen backbone; supervised ImageNet-1k linear classifier; Top-1 accuracy (%), 224 × 224 input."
+  }
+}

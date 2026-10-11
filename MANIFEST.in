@@ -1,0 +1,14 @@
+include README.md README.en.md CONTRACT.md CONTRIBUTING.md LICENSE AGENTS.md .gitignore .env.example
+recursive-include poster_agent/web *.html
+recursive-include skills *.md *.yaml
+recursive-include tests *.py
+recursive-include docs *.md *.html *.png *.svg *.json
+recursive-include .github *.yml
+prune examples/*
+include examples/demo/README.md examples/demo/generation.json examples/demo/poster-demo-preview.png
+recursive-include examples/demo/figures *.svg
+prune examples/demo/generated
+prune examples/demo/rendered
+prune projects
+prune tmp
+global-exclude __pycache__ *.py[cod] .env

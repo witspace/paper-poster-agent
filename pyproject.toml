@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-poster-agent"
+version = "0.1.0"
+description = "Evidence-grounded, editable conference posters with visual review and print checks."
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = ["PyMuPDF>=1.24", "Pillow>=10", "playwright>=1.48", "openai>=2.28"]
+
+[project.scripts]
+poster-agent = "poster_agent.cli:main"
+
+[tool.setuptools.package-data]
+poster_agent = ["web/*.html"]
+
+[tool.setuptools.packages.find]
+include = ["poster_agent*"]

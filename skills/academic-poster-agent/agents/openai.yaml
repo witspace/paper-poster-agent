@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Poster Agent"
+  short_description: "从论文原图制作可编辑海报，核验会议要求，支持局部审阅与打印交付"
+  default_prompt: "使用 $academic-poster-agent，根据我的论文与会议要求制作 HTML 学术海报，先生成参考图并完成对照审阅，再按我的反馈调整并交付打印文件。"

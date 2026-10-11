@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="965" height="250" viewBox="0 0 965 250">
+    <rect width="965" height="250" fill="#ffffff"/>
+    <g font-family="Arial, sans-serif" fill="#183448">
+      <text x="35" y="40" font-size="24" font-weight="700">Connect the question to its evidence</text>
+      <rect x="35" y="70" width="225" height="115" rx="8" fill="#edf4f6"/>
+      <text x="55" y="105" font-size="21" font-weight="700">Research question</text>
+      <text x="55" y="140" font-size="16">Meaning of the claim?</text>
+      <text x="55" y="165" font-size="16">Where is its source?</text>
+      <path d="M280 125 H350 M335 112 L350 125 L335 138" fill="none" stroke="#157b86" stroke-width="5"/>
+      <rect x="370" y="70" width="225" height="115" rx="8" fill="#e7f3f2"/>
+      <text x="390" y="105" font-size="21" font-weight="700">Source relationship</text>
+      <text x="390" y="140" font-size="16">Paper page + source figure</text>
+      <text x="390" y="165" font-size="16">Protocol + exact numbers</text>
+      <path d="M615 125 H685 M670 112 L685 125 L670 138" fill="none" stroke="#157b86" stroke-width="5"/>
+      <rect x="705" y="70" width="225" height="115" rx="8" fill="#fff3df"/>
+      <text x="725" y="105" font-size="21" font-weight="700">Reviewer decision</text>
+      <text x="725" y="140" font-size="16">Inspect, revise or approve</text>
+      <text x="725" y="165" font-size="16">Freeze the exact version</text>
+      <text x="35" y="225" font-size="17">DEMO - original vector drawing; all labels are preserved in the print output.</text></g></svg>
